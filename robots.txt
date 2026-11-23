@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://1023t.github.io/shinetagify-site/sitemap.xml

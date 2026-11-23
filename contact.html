@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Contact &amp; Quote Request — Shine Tagify</title>
+<meta name="description" content="Send your artwork, size and quantity. Get a price and a sample plan from the factory, usually the same day.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%2314161a'/%3E%3Crect x='9' y='9' width='14' height='14' fill='%23f5c400' transform='rotate(45 16 16)'/%3E%3C/svg%3E">
+<link rel="stylesheet" href="assets/site.css">
+</head>
+<body>
+
+<div class="strip"><div class="wrap">
+  <span><b>Factory direct</b> · 20+ years · Free samples in 7 days</span>
+  <span>edward@shinetagify.com &nbsp;·&nbsp; WhatsApp +86 198 4427 2768</span>
+</div></div>
+
+<header><div class="wrap">
+  <a class="logo" href="index.html"><i></i>SHINE TAGIFY</a>
+  <nav class="desk">
+    <a href="index.html">Home</a>
+    <a href="products.html">Products</a>
+    <a href="factory.html">Factory</a>
+    <a class="on" href="contact.html">Contact</a>
+  </nav>
+  <details class="mnav">
+    <summary aria-label="Open menu">&#9776;</summary>
+    <div class="mnav-panel">
+      <a href="index.html">Home</a>
+      <a href="products.html">Products</a>
+      <a href="factory.html">Factory</a>
+      <a class="on" href="contact.html">Contact</a>
+    </div>
+  </details>
+  <a class="btn acc hdr" href="#form">Get a quote</a>
+</div></header>
+
+<div class="page-head"><div class="wrap">
+  <div class="crumbs"><a href="index.html">Home</a> / Contact</div>
+  <h1>Send your artwork</h1>
+  <p>Tell us the product, the size and how many pieces. We come back with a price and a sample plan —
+     usually the same day.</p>
+</div></div>
+
+<section id="form">
+  <div class="wrap contact">
+    <div>
+      <h2 style="margin:0 0 10px;font-size:26px">Direct to the factory</h2>
+      <p style="margin:0 0 22px;color:var(--ink-2)">No reseller, no ticket queue. The person who quotes you is the
+         person who runs the job.</p>
+      <div style="border-top:1px solid var(--line);padding-top:22px;font-size:14.5px;color:var(--ink-2)">
+        <p style="margin:0 0 8px"><b style="color:var(--ink)">Shine Tagify</b> — key tags, hang tags, metal plates, decals and automotive accessories.</p>
+        <p style="margin:0 0 8px">Email <a href="mailto:edward@shinetagify.com" style="border-bottom:2px solid var(--accent)">edward@shinetagify.com</a></p>
+        <p style="margin:0 0 8px">WhatsApp +86 198 4427 2768</p>
+        <p style="margin:0">Samples: tell us the item and we post a physical sample — free of charge for stock items.</p>
+      </div>
+      <div style="margin-top:26px;border-top:1px solid var(--line);padding-top:22px">
+        <b style="display:block;font-size:14.5px;margin-bottom:8px">What makes a quote fast</b>
+        <ul class="lines" style="grid-template-columns:1fr">
+          <li><div><span>Logo file (AI / PDF / high-res PNG)</span></div></li>
+          <li><div><span>Size or die shape</span></div></li>
+          <li><div><span>Quantity per design and per colour</span></div></li>
+          <li><div><span>Where it ships to, and how it is packed</span></div></li>
+        </ul>
+      </div>
+    </div>
+
+    <form action="https://formsubmit.co/edward@shinetagify.com" method="POST">
+      <input type="hidden" name="_subject" value="New inquiry from shinetagify.com">
+      <input type="hidden" name="_captcha" value="false">
+      <input type="hidden" name="_template" value="table">
+      <div><label>Name</label><input name="name" required></div>
+      <div><label>Company</label><input name="company"></div>
+      <div><label>Email</label><input type="email" name="email" required></div>
+      <div><label>Country</label><input name="country"></div>
+      <div class="full"><label>Product &amp; quantity</label>
+        <input id="product" name="product" placeholder="e.g. self-locking key tags KT-200S, 5,000 pcs"></div>
+      <div class="full"><label>Message</label><textarea name="message" placeholder="Sizes, colours, logo file, target price…"></textarea></div>
+      <div class="full"><button class="btn acc" type="submit" style="width:100%;justify-content:center">Send inquiry</button></div>
+      <p class="hint full" style="margin:0">We reply within one business day. No mailing list, no reseller.</p>
+    </form>
+  </div>
+</section>
+
+<footer><div class="wrap">
+  <div><b>SHINE TAGIFY</b><br>Key tags · hang tags · vinyl tags · roll labels</div>
+  <div><a href="products.html">Products</a> &nbsp;·&nbsp; <a href="factory.html">Factory</a> &nbsp;·&nbsp; <a href="contact.html">Contact</a><br>
+       edward@shinetagify.com · +86 198 4427 2768</div>
+</div></footer>
+
+<script>
+/* 产品页点「Get quote」时，把型号自动填进表单：contact.html?product=KT-200S */
+(function(){
+  var q = new URLSearchParams(location.search).get('product');
+  if (q) {
+    var el = document.getElementById('product');
+    if (el && !el.value) { el.value = q; }
+    var m = document.querySelector('textarea[name="message"]');
+    if (m && !m.value) { m.value = 'Item: ' + q + '\nQuantity: '; }
+  }
+})();
+</script>
+
+</body>
+</html>
