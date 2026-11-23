@@ -1,7 +1,7 @@
 # 怎么改这个网站（中文说明）
 
 站点是**纯静态页面**，没有任何后台/数据库，改哪个文件就改哪一块内容。
-改完提交到 GitHub，1–2 分钟后 https://1023t.github.io/shinetagify-site/ 自动更新。
+改完提交到 GitHub，1–2 分钟后 **https://shinetagify.com/** 自动更新。
 
 ---
 
@@ -70,19 +70,19 @@ git commit -m "改了什么"
 git push
 ```
 - 仓库：`1023T/shinetagify-site`
-- 发布后看效果：https://1023t.github.io/shinetagify-site/
+- 发布后看效果：https://shinetagify.com/
 - GitHub Pages 有 1–2 分钟缓存，改完没变化就等一会儿再刷新（手机上加 `?v=2` 强制刷新）
 
 ---
 
-## 五、换自己的域名（shinetagify.com）
+## 五、域名（已完成，2026-11-23 生效）
 
 在阿里云 DNS 只改这两条，**MX / SPF 千万别动**（动了邮件就断）：
 
 | 记录 | 主机 | 值 |
 |---|---|---|
 | A | `@` | `185.199.108.153` |
-| CNAME | `www` | `1023t.github.io` |
+| CNAME | `www` | `1023t.github.io`（已生效）|
 
 再到仓库 Settings → Pages → Custom domain 填 `shinetagify.com`，勾上 HTTPS。
 `index.html` 里的 `og:image` 和 `sitemap.xml` 里的地址，换域名后要一起改成新域名。
