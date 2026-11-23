@@ -206,3 +206,40 @@ footer a:hover{color:#fff}
   header .wrap{gap:14px}
   .btn.acc.hdr{display:none}
 }
+
+/* ---------- product line subnav ---------- */
+.subnav{border-bottom:1px solid var(--line);background:#fff;overflow-x:auto;-webkit-overflow-scrolling:touch}
+.subnav .wrap{display:flex;gap:6px;align-items:center;white-space:nowrap;padding:0 20px;height:52px}
+.subnav a{font-size:13.5px;color:var(--ink-2);padding:6px 10px;border-radius:5px}
+.subnav a:hover{background:var(--soft);color:var(--ink)}
+.subnav a.on{background:var(--ink);color:#fff;font-weight:600}
+.subnav .sep{color:#d5d9de;font-size:11px}
+
+/* ---------- product badges ---------- */
+.card .meta{display:flex;gap:6px;flex-wrap:wrap;margin-bottom:2px}
+.badge{font-size:11.5px;letter-spacing:.02em;background:var(--soft);border:1px solid var(--line);color:#5b636c;border-radius:4px;padding:1px 6px}
+.badge.dim{background:#fff8e1;border-color:#f2e2a8;color:#7a6410}
+.card .ph{display:block}
+.card h3 a:hover{color:#000;text-decoration:underline;text-decoration-color:var(--accent);text-decoration-thickness:2px;text-underline-offset:3px}
+
+/* ---------- catalog filters ---------- */
+.filters{display:flex;gap:16px;justify-content:space-between;align-items:flex-start;flex-wrap:wrap;margin-bottom:28px;
+  position:sticky;top:70px;z-index:15;background:rgba(255,255,255,.96);backdrop-filter:blur(8px);padding:12px 0;border-bottom:1px solid var(--line)}
+.chips{display:flex;gap:8px;flex-wrap:wrap;flex:1;min-width:260px}
+.chip{font:inherit;font-size:13.5px;cursor:pointer;border:1px solid var(--line);background:#fff;color:var(--ink-2);
+  border-radius:20px;padding:6px 13px;display:inline-flex;gap:6px;align-items:center}
+.chip b{font-size:11.5px;color:#8b939c;font-weight:600}
+.chip:hover{border-color:#c8cdd3;color:var(--ink)}
+.chip.on{background:var(--ink);border-color:var(--ink);color:#fff}
+.chip.on b{color:var(--accent)}
+.searchbox{display:flex;flex-direction:column;gap:5px;min-width:280px}
+.searchbox input{font-size:14px;padding:9px 12px}
+.searchbox span{font-size:12px;color:#7d858e;text-align:right}
+@media (max-width:960px){ .filters{position:static} .searchbox{width:100%} }
+
+/* ---------- 13 条产品线文字索引 ---------- */
+.lineindex{display:flex;gap:10px 18px;flex-wrap:wrap;align-items:center;margin-top:34px;padding-top:26px;border-top:1px solid var(--line);font-size:14px}
+.lineindex b{font-size:13px;text-transform:uppercase;letter-spacing:.1em;color:#7d858e;font-weight:700}
+.lineindex a{color:var(--ink-2);border-bottom:1px solid transparent;padding-bottom:1px}
+.lineindex a:hover{color:var(--ink);border-bottom-color:var(--accent)}
+.lineindex a.more{color:var(--ink);font-weight:700;border-bottom:2px solid var(--accent)}

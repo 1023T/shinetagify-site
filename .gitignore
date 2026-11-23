@@ -1,0 +1,13 @@
+__pycache__/
+*.py
+catalog.json
+catalog_clean.json
+final*.json
+flagged.json
+curate*.py
+clean_catalog.py
+apply_final.py
+build_*.py
+patch_*.py
+fetch_imgs.py
+kept.json
